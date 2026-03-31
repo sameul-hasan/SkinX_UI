@@ -53,7 +53,7 @@ SkinX is a mobile-first skin awareness web application with guided scan intake, 
 Default admin credentials:
 
 - Email: `admin@skinx.com`
-- Password: `admin123`
+- Password:
 
 ## Local Development
 
