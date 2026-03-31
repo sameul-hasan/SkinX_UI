@@ -1,0 +1,91 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-skx-bg: #f4fbff;
+  --color-skx-bg-strong: #e7f6ff;
+  --color-skx-primary: #00c2d6;
+  --color-skx-secondary: #2ed3c6;
+  --color-skx-soft: #0f2a44;
+  --color-skx-bubble-user: #00c2d6;
+  --color-skx-bubble-ai: #12304c;
+  --color-skx-brand-navy: #0f2a44;
+  --color-skx-brand-cyan: #00c2d6;
+  --color-skx-brand-teal: #2ed3c6;
+}
+
+:root {
+  font-family: Inter, 'Segoe UI', Roboto, sans-serif;
+  color: #0f2a44;
+  background-color: #f4fbff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 12% -8%, rgba(0, 194, 214, 0.22), transparent 48%),
+    radial-gradient(circle at 92% 4%, rgba(46, 211, 198, 0.18), transparent 40%),
+    linear-gradient(165deg, #f8fdff 0%, #e8f7ff 100%);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.glass {
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.9), rgba(232, 248, 255, 0.82));
+  border: 1px solid rgba(15, 42, 68, 0.12);
+  backdrop-filter: blur(20px);
+}
+
+.glass-light {
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.94), rgba(237, 251, 255, 0.88));
+  border: 1px solid rgba(15, 42, 68, 0.12);
+  backdrop-filter: blur(18px);
+}
+
+.public-shell {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 8% 3%, rgba(0, 194, 214, 0.22), transparent 42%),
+    radial-gradient(circle at 90% -6%, rgba(46, 211, 198, 0.2), transparent 40%),
+    linear-gradient(165deg, #f8fdff 0%, #e8f7ff 100%);
+  color: #0f2a44;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #00c2d6, #2ed3c6);
+  color: #ffffff;
+  box-shadow: 0 10px 24px -12px rgba(0, 194, 214, 0.85);
+}
+
+.btn-primary:hover,
+.btn-primary:focus-visible {
+  box-shadow: 0 0 0 2px rgba(46, 211, 198, 0.3), 0 14px 32px -12px rgba(0, 194, 214, 0.95);
+}
+
+.glow-cyan:hover,
+.glow-cyan:focus-visible {
+  box-shadow: 0 0 0 1px rgba(46, 211, 198, 0.45), 0 10px 30px -14px rgba(0, 194, 214, 0.9);
+}
+
+.chat-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.chat-scroll::-webkit-scrollbar-thumb {
+  background: rgba(46, 211, 198, 0.45);
+  border-radius: 999px;
+}
